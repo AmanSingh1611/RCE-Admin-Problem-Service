@@ -1,4 +1,4 @@
-# Algocode Problem Setting service
+# Remote Code Executor Problem Setting service
 
 This project provides a web-based platform for users to practice and solve problems using their preferred programming language. It acts as a remote code executor, allowing users to write, execute, and view the output of their code directly on the website.
 
