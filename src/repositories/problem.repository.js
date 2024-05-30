@@ -1,4 +1,4 @@
-const { Problem } = require('../models/index');
+const { Problem } = require('../models');
 
 class ProblemRepository {
 
@@ -12,6 +12,16 @@ class ProblemRepository {
             });
 
             return problem;
+        } catch(error) {
+            console.log(error);
+            throw error;
+        }
+    }
+
+    async getAllProblems() {
+        try {
+            const problems = await Problem.find({});
+            return problems;
         } catch(error) {
             console.log(error);
             throw error;
